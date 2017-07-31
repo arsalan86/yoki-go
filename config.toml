@@ -1,6 +1,6 @@
-baseurl = ""
+baseurl = "www.x.com"
 languageCode = "en"
-title = "Arsalan Pirzada"
+title = "yoki-go"
 theme = "yoki-go"
 copyright = "&copy; 2017, Arsalan Pirzada"
 
