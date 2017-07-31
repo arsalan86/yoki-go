@@ -2,7 +2,7 @@
 
 A clean, minimal, netlify ready theme for Hugo, derived from [hucore](https://github.com/mgjohansen/hucore).
 
-This is a work in progress. I've uploaded it in order to be able to deploy to Netlify for live testing. Netlify integration is one of my main goals for this theme. The master branch (currently locked to #0ed1718) is deployed [here](https://yoki-go.netlify.com/).
+This is a work in progress. Netlify integration is one of my main goals for this theme. The master branch (currently locked to #0ed1718) is deployed [here](https://yoki-go.netlify.com/).
 
 Visually, the theme is nearly identical to [hucore](https://github.com/mgjohansen/hucore) with a few layout and font changes. I've derived from hucore (as opposed to forking it) because it is a nice clean theme that serves my purpose well: I wanted a starting point for my experimentations with Hugo and continious deployments on Netlify. This theme is a small part of a larger project I'm working on that incorporates Hugo and the Netlify API. There are no plans for any significant deviations from hucore/Hemingway in terms of style. 
 
@@ -24,7 +24,7 @@ The `blogroot` setting points to the folder where your blog posts are. A paginat
 
 If you wish to add top level pages to your site (work/about/contact etc), place them in the root folder, and add the following to their front matter:
 
-```
+```toml
 type: "singlepage"
 layout: default
 ```
@@ -33,9 +33,10 @@ Hugo will then use the template in `layouts\singlepage\default.html` to process 
 
 ## Todo:
 
-- Performance tweaks: remove above the fold scripts
-
-## Roadmap:
-
 - Netlify integration via a python script: this should be as simple as invoking the script, inputting your credentials, git repo and deploying
 - Template variables in css, css optimization and simplification to allow easier customization
+- CSS performance optimization
+
+## License:
+
+MIT
