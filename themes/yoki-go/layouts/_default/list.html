@@ -1,4 +1,5 @@
-{{ partial "header" . }} {{ partial "nav" . }} 
+{{ partial "header" . }}
+{{ partial "nav" . }} 
 <section class="section">
   <div class="container">
     {{ range sort .Paginator.Pages }}
@@ -10,7 +11,7 @@
         {{ .Summary | plainify | safeHTML }} {{ if .Truncated }} ...
           <a class="button is-link" href="{{ .Permalink }}" style="height:28px">Read more
             <span class="icon is-small">
-            <i class="fa fa-angle-double-right"></i>
+              <i class="fa fa-angle-double-right"></i>
             </span>
           </a>
           {{ end }}
@@ -19,4 +20,5 @@
     {{ end }}
   </div>
 </section>
-{{ partial "pager" . }} {{ partial "footer" . }}
+{{ partial "pager" . }}
+{{ partial "footer" . }}

@@ -1,7 +1,7 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/spf13/hugoThemes#themetoml for an example
 
-name = "yokigo"
+name = "yoki-go"
 license = "MIT"
 licenselink = "https://github.com/arsalan86/yoki-go/blob/LICENSE"
 description = "Minimal blog theme for hugo based on hucore"

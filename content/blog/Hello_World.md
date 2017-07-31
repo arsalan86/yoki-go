@@ -10,62 +10,23 @@ draft: false
 It Works!
 
 
-This is a block of text it is a bloc of text it is still a block of text what am i doing please stop me please!
-This is a block of text it is a bloc of text it is still a block of text what am i doing please stop me please!
-This is a block of text it is a bloc of text it is still a block of text what am i doing please stop me please!
-This is a block of text it is a bloc of text it is still a block of text what am i doing please stop me please!
-This is a block of text it is a bloc of text it is still a block of text what am i doing please stop me please!
-This is a block of text it is a bloc of text it is still a block of text what am i doing please stop me please!
-This is a block of text it is a bloc of text it is still a block of text what am i doing please stop me please!
-This is a block of text it is a bloc of text it is still a block of text what am i doing please stop me please!
-This is a block of text it is a bloc of text it is still a block of text what am i doing please stop me please!
-This is a block of text it is a bloc of text it is still a block of text what am i doing please stop me please!
-
-pub
+This is a block of text it is not a bloc of text.
+This is a block of text it is not a bloc of text.
+This is a block of text it is not a bloc of text.
+This is a block of text it is not a bloc of text.
+This is a block of text it is not a bloc of text.
 
 
->$ sudo apt-get install build-essential
+    $ sudo make me a sandwich
 
-    INLINE BLOCK INLINE BLOCK
-    INLINE BLOCK INLINE BLOCK     ruin ur formattingz
-    INLINE BLOCK INLINE BLOCK                  all of ur formattingz
-    INLINE BLOCK INLINE BLOCK
-    INLINE BLOCK INLINE BLOCK
-    def
 
-    pub pub
 
-```
-    #[derive(Serialize, Deserialize)]
-    pub struct ConfigFile {
-        pub filepath: String,
-        pub blake2hash: String,
-        pub comment: String,
+>this is a blockquote
 
-    }
+    def function
 
-    impl ConfigFile {
-        pub fn get_hash(&mut self) -> Result<String, io::Error> {
+and
 
-            let data = read_file(&self.filepath)?;
-            let mut hasher = Blake2b::default();
-            hasher.input(&data.into_bytes());
-            let output = String::from(format!("{:x}", hasher.result()));
-            Ok(output)
-        }
-
-        pub fn check_hash_changed(&mut self) -> bool {
-
-            let oldhash = self.blake2hash.clone();
-            self.blake2hash = self.get_hash().unwrap();
-            oldhash != self.blake2hash
-        }
-
-        pub fn get_contents(&self) -> String {
-
-            read_file(&self.filepath).unwrap()
-
-        }
-
-    }
-```
+    static a
+    void b
+    true

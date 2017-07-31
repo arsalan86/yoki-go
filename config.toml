@@ -3,6 +3,7 @@ languageCode = "en"
 title = "yoki-go"
 theme = "yoki-go"
 copyright = "&copy; 2017, Arsalan Pirzada"
+paginate = 5
 
 [taxonomies]
 tag = "tags"
@@ -17,7 +18,7 @@ displayauthor = false
 
 [params.highlight]
 style = "github"
-languages = ["go", "rust", "R", "Haskell"]
+languages = ["rust", "python", "haskell", "r"]
 
 [[params.navpages]]
 url = "/work"
