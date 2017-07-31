@@ -15,6 +15,7 @@ keywords = ["Hugo", "Theme", "Template", "Clean", "Minimal"]
 author = "Arsalan Pirzada"
 sharingicons = false
 displayauthor = false
+blogroot = "blog" #this is the folder"
 
 [params.highlight]
 style = "github"

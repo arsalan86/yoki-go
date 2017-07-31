@@ -6,7 +6,7 @@
       <div class="content">
         {{ .Content }}
         <article>
-{{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}
+{{ $paginator := .Paginate (where .Data.Pages "Type" .Site.Params.blogroot) }}
 {{ range $paginator.Pages }}
           <h1 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}</h1>
           <h2 class="subtitle is-5">{{ .Date.Format "January 2, 2006" }}</h2>
