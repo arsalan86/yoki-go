@@ -4,6 +4,8 @@ title = "yoki-go"
 theme = "yoki-go"
 copyright = "&copy; 2017, Arsalan Pirzada"
 paginate = 5
+disqusShortname = "shortname"
+googleAnalytics = "trackingcode"
 
 [taxonomies]
 tag = "tags"
