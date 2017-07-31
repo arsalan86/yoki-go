@@ -1,7 +1,5 @@
 # yoki-go (よき-go)
 
-![Deploys by Netlify](https://www.netlify.com/img/global/badges/netlify-light.svg "Deploys by Netlify")
-
 A clean, minimal, netlify ready theme for Hugo, derived from [hucore](https://github.com/mgjohansen/hucore).
 
 This is a work in progress. I've uploaded it in order to be able to deploy to Netlify for live testing. Netlify integration is one of my main goals for this theme. The master branch (currently locked to #0ed1718) is deployed [here](https://yoki-go.netlify.com/).
