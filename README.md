@@ -29,7 +29,7 @@ type: "singlepage"
 layout: "default"
 ```
 
-Hugo will then use the template in `layouts\singlepage\default.html` to process these pages. You can change the values for `type` and `layout`. Hugo looks for a template in `layouts\<type>\<layout>.html`.
+Hugo will then use the template in `layouts/singlepage/default.html` to process these pages. You can change the values for `type` and `layout`. Hugo looks for a template in `layouts/<type>/<layout>.html`.
 
 ## Todo:
 
