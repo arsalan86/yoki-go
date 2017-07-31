@@ -1,4 +1,4 @@
-baseurl = "www.x.com"
+baseurl = "https://yoki-go.netlify.com/"
 languageCode = "en"
 title = "yoki-go"
 theme = "yoki-go"
