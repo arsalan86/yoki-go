@@ -9,7 +9,7 @@ tag = "tags"
 category = "categories"
 
 [params]
-description = "yoki-go is a clean, minimal theme for Hugo, based on hucore"
+description = "yoki-go is a clean, minimal, netlify ready theme for Hugo, based on hucore"
 keywords = ["Hugo", "Theme", "Template", "Clean", "Minimal"]
 author = "Arsalan Pirzada"
 sharingicons = false
