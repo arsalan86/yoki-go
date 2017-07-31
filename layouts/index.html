@@ -5,24 +5,12 @@
     <main aria-role="main">
       <div class="content">
         {{ .Content }}
-        <article>
-{{ $paginator := .Paginate (where .Data.Pages "Type" .Site.Params.blogroot) }}
-{{ range $paginator.Pages }}
-          <h1 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}</h1>
-          <h2 class="subtitle is-5">{{ .Date.Format "January 2, 2006" }}</h2>
-          {{ if .Params.tags }} {{ partial "tags" .Params.tags }} {{ end }}
-          <div class="content">
-            {{ .Summary | plainify | safeHTML }} {{ if .Truncated }} ...
-            <a class="button is-link" href="{{ .Permalink }}" style="height:28px">
-          Read more</a>
-            <span class="icon is-small">
-            <i class="fa fa-angle-double-right"></i>
-          </span> {{end}} {{ end }}
-        </article>
-        <br />
-
+      </div>
+          {{  if .Site.Params.blogroot  }}
+            {{ partial "bloglist" . }}
+          {{ end }}
     </main>
-    </div>
+  </div>
 </section>
 {{ partial "pager" . }}
 {{ partial "footer" . }}
