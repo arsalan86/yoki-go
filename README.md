@@ -24,7 +24,7 @@ The `blogroot` setting points to the folder where your blog posts are. A paginat
 
 If you wish to add top level pages to your site (work/about/contact etc), place them in the root folder, and add the following to their front matter:
 
-```toml
+```yaml
 type: "singlepage"
 layout: "default"
 ```
