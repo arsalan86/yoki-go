@@ -1,0 +1,36 @@
+baseurl = ""
+languageCode = "en"
+title = "Arsalan Pirzada"
+theme = "yoki-go"
+copyright = "&copy; 2017, Arsalan Pirzada"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[params]
+description = "yoki-go is a clean, minimal theme for Hugo, based on hucore"
+keywords = ["Hugo", "Theme", "Template", "Clean", "Minimal"]
+author = "Arsalan Pirzada"
+sharingicons = false
+displayauthor = false
+
+[params.highlight]
+style = "github"
+languages = ["go", "rust", "R", "Haskell"]
+
+[[params.navpages]]
+url = "/work"
+name = "work"
+
+[[params.social]]
+url = "mailto:public@arsalanpirzada.com"
+fa_icon = "fa-envelope"
+
+[[params.social]]
+url = "https://github.com/arsalan86"
+fa_icon = "fa-github"
+
+[[params.social]]
+url = "/index.xml"
+fa_icon = "fa-rss"

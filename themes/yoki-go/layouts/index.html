@@ -1,0 +1,34 @@
+{{ partial "header" . }} {{ partial "nav" . }}
+<section class="section">
+  <div class="container">
+    <main aria-role="main">
+      <div class="content">
+<div class='pixels-photo'>
+  <p>
+    <img src='https://drscdn.500px.org/photo/162899239/m%3D900/v2?user_id=14639459&webp=true&sig=cc48bbbc446cd8b6ca12d80734a2760ca0ad72cec1e6ad199c9d4587702e6b15' alt='Shimshal Pass (Ṣ̌ʉw Wʉrt) by Arsalan Pirzada on 500px.com'>
+  </p>
+  <a href='https://500px.com/photo/162899239/shimshal-pass-%E1%B9%A2%CC%8C%CA%89w-w%CA%89rt-by-arsalan-pirzada' alt='Shimshal Pass (Ṣ̌ʉw Wʉrt) by Arsalan Pirzada on 500px.com'></a>
+</div>
+<script type='text/javascript' src='https://500px.com/embed.js'></script>
+        {{ .Content }}
+        <article>
+{{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}
+{{ range $paginator.Pages }}
+          <h1 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}</h1>
+          <h2 class="subtitle is-5">{{ .Date.Format "January 2, 2006" }}</h2>
+          {{ if .Params.tags }} {{ partial "tags" .Params.tags }} {{ end }}
+          <div class="content">
+            {{ .Summary | plainify | safeHTML }} {{ if .Truncated }} ...
+            <a class="button is-link" href="{{ .Permalink }}" style="height:28px">
+          Read more</a>
+            <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span> {{end}} {{ end }}
+        </article>
+        <br />
+
+    </main>
+    </div>
+</section>
+{{ partial "pager" . }}
+{{ partial "footer" . }}

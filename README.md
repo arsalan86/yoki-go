@@ -1,2 +1,2 @@
 # yoki-go
-A clean, minimal theme derived from hucore
+A clean, minimal theme for Hugo, derived from hucore

@@ -1,0 +1,25 @@
+{{ partial "header" . }} {{ partial "nav" . }}
+<section class="section">
+  <div class="container">
+    <main aria-role="main">
+      <div class="content">
+        {{ .Content }}
+<form name="contact" netlify-honeypot="bot-field" action="thank-you" netlify>
+  <p class="hidden">
+    <label>Don’t fill this out: <input name="bot-field"></label>
+  </p>
+  <p>
+    <label>Email: <input type="text" name="name"></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type=”submit”>Send</button>
+  </p>
+</form>
+    </main>
+    </div>
+</section>
+{{partial "pager" . }}
+{{ partial "footer" . }}
