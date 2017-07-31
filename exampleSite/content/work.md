@@ -2,7 +2,7 @@
 title: "Work"
 draft: false
 type: "singlepage"
-layout: default
+layout: "default"
 ---
 
 This is a *single page*, using the *default* layout.

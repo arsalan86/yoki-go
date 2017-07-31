@@ -26,7 +26,7 @@ If you wish to add top level pages to your site (work/about/contact etc), place 
 
 ```toml
 type: "singlepage"
-layout: default
+layout: "default"
 ```
 
 Hugo will then use the template in `layouts\singlepage\default.html` to process these pages. You can change the values for `type` and `layout`. Hugo looks for a template in `layouts\<type>\<layout>.html`.
